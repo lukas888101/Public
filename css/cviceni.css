@@ -1,1 +1,14 @@
-
+td {text-align:center;}
+table, tr, td {border: 1px solid white; border-collapse: collapse}
+body {background-color: black; color: lime}
+img {width:90%}
+p {margin-left:20px;}
+.p1 {color:deepskyblue;}
+table {width:620px;background-color:grey;}
+.head {font-weight:bold;background-color:#c0c0c0}
+.head td span {color: blue;}
+#lastline {font-weight:bold;background-color:#c0c0c0}
+#lastline td span {color: blue;}
+hr {width:100%;color:grey;}
+#peturovni div div div h3 {color: mediumvioletred}
+body div div p {text-decoration:underline}
