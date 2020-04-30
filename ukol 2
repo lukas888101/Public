@@ -1,0 +1,158 @@
+
+
+<?PHP
+$LukasTrapl1 = 5;
+$LukasTrapl2 = 1;
+if(true)
+{
+    echo"LukasTrapl";
+}
+echo "<br>";
+if(true)
+{
+    echo"Lukas";
+} else
+    {
+    echo "Slim";
+}
+echo "<br>";
+if(false)
+{
+    echo"Shady";
+} else
+    {
+    echo "Trapl";
+}
+
+echo "<br>";
+
+if ($LukasTrapl1 >= $LukasTrapl2)
+{
+    echo "Lukas<br>";
+    if ($LukasTrapl1 == $LukasTrapl2)
+    {
+        echo "Trapl<br>";
+    }
+}
+echo "<br>";
+
+switch ($LukasTrapl1)
+{
+    case $LukasTrapl1:
+        echo "1";
+        break;
+    case 2:
+        echo "2";
+        break;
+    case 3:
+        echo "3";
+        break;
+    case 4:
+        echo "4";
+        break;
+    case 5:
+        echo "5";
+        break;
+    case N:
+        echo "N";
+        break;
+}
+
+
+
+echo "<br>";
+$znacka = array(1 =>"škoda", 2=>"mercedes", 3=>"audi", 4=>"BMW", 5=>"ford", 6=>"citroen", 7=>"lada", 8=>"peugeot", 9=>"cadillac", 10=>"lamborghini");
+var_dump($znacka);
+echo "<br>";
+$auta = array
+(
+    "první" => array
+    (
+        "druhej" => array
+        (
+            "třetí" => array('znacka' => 'škoda',
+                'model' => 'superb',
+                'cena' => '1 100 000 Kč',
+                'zeme' => 'česko',
+                'výkon' => "200Kw" ),
+
+            array('znacka' => 'mercedes',
+                'model' => 'G',
+                'cena' => '8 300 000 Kč',
+                'zeme' => 'německo',
+                'výkon' => "463Kw" ),
+
+            array('znacka' => 'audi',
+                'model' => 'RS6',
+                'cena' => '3 800 000Kč',
+                'zeme' => 'německo',
+                'výkon' => "441Kw" ),
+
+            array('znacka' => 'BMW',
+                'model' => 'M760Li',
+                'cena' => '4 500 000Kč',
+                'zeme' => 'německo',
+                'výkon' => "430Kw" ),
+
+            array('znacka' => 'ford',
+                'model' => 'mustang',
+                'cena' => '2 100 000Kč',
+                'zeme' => 'USA',
+                'výkon' => "380Kw" ),
+
+            array('znacka' => 'citroen',
+                'model' => 'C5',
+                'cena' => '800 000Kč',
+                'zeme' => 'francie',
+                'výkon' => "140Kw" ),
+
+            array('znacka' => 'lada',
+                'model' => 'kalina',
+                'cena' => '30 000Kč',
+                'zeme' => 'rusko',
+                'výkon' => "49Kw" ),
+
+            array('znacka' => 'peugeot',
+                'model' => '508',
+                'cena' => '1 150 000Kč',
+                'zeme' => 'francie',
+                'výkon' => "170Kw" ),
+
+            array('znacka' => 'Cadillac',
+                'model' => 'escalade',
+                'cena' => '3 100 000 Kč',
+                'zeme' => 'USA',
+                'výkon' => "313Kw" ),
+
+            array('znacka' => 'lamborghini',
+                'model' => 'aventador',
+                'cena' => '14 100 000 Kč',
+                'zeme' => 'itálie',
+                'výkon' => "566Kw" ),
+        )
+    )
+);
+
+var_dump($auta['první']);
+echo "<br>";
+
+function isvalid (array$param1, string$param2)
+{
+
+    foreach ($param1 as $value)
+
+    {
+        if (strpos($param2, $value))
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+
+
+$slovo = array("pes","kočka");
+$veta = "pes je přítel člověka";
+var_dump(isvalid($slovo, $veta));
+?>
