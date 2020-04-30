@@ -1,0 +1,50 @@
+<?php
+
+$a = 3;
+$b = 5;
+
+
+//porovnani
+echo "<br> Rovná se";
+echo "<br>";
+var_dump($a == $b);
+echo "<br> Má rozdílnou hodnotu";
+echo "<br>";
+var_dump($a != $b);
+echo "<br> A je větší než B";
+echo "<br>";
+var_dump($a > $b);
+echo "<br> B je větší než A";
+echo "<br>";
+var_dump($a < $b);
+
+//matematcike
+echo "<br> sčítání";
+var_dump($a + $b);
+echo "<br>";
+echo "<br> odčítání";
+var_dump($a - $b);
+echo "<br>";
+echo "<br> dělení";
+var_dump($a / $b);
+echo "<br>";
+echo "<br> násobení";
+var_dump($a * $b);
+echo "<br>";
+
+//vysleky
+echo "<br>";
+var_dump($a++);
+echo "<br>";
+var_dump($a--);
+echo "<br>";
+var_dump($a += $b);
+echo "<br>";
+var_dump($a -= $b);
+echo "<br>";
+var_dump($a *= $b);
+echo "<br>";
+var_dump($a /= $b);
+echo"<br>";
+
+?>
